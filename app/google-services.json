@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "530498502482-7astimd5rrt60o3pasm5dfn2no7he6vs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wikrama.masis",
+            "certificate_hash": "30D1FC085E8F9A9634FAE4993F6A444E4841CFF5"
+          }
+        },
+        {
           "client_id": "530498502482-h4h04oo6cs8ed6m4hulq86o8dsq3u5qf.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -1,9 +1,6 @@
 package com.wikrama.masis;
 
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -15,22 +12,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-    private TextView emailTxt, nameTxt;
-    private SharedPreferences pref;
-    private SharedPreferences.Editor mEditor;
-    private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener mAuthListener;
-    private Intent i;
-    private String isLogged, userName, USER, EMAIL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,13 +40,6 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        navigationView.setItemIconTintList(null);
-        View header = navigationView.getHeaderView(0);
-        USER = pref.getString("userName", null);
-        emailTxt = (TextView) header.findViewById(R.id.emailTxt);
-        nameTxt = (TextView) header.findViewById(R.id.nameTxt);
-        emailTxt.setText(EMAIL + "");
-        nameTxt.setText(USER + "");
     }
 
     @Override
@@ -75,45 +52,50 @@ public class HomeActivity extends AppCompatActivity
         }
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.home, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_profile) {
-            i = new Intent(getApplicationContext(), UserProfile.class);
-            startActivity(i);
+        if (id == R.id.nav_camera) {
+            // Handle the camera action
+        } else if (id == R.id.nav_gallery) {
+
+        } else if (id == R.id.nav_slideshow) {
+
+        } else if (id == R.id.nav_manage) {
+
         } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_information ){
+        } else if (id == R.id.nav_send) {
 
-        } else if (id == R.id.nav_help) {
-
-        } else if (id == R.id.nav_share) {
-            shareIt();
-        } else if (id == R.id.nav_logout) {
-            mEditor.putString("isLogged", null);
-            mEditor.putString("userName", null);
-            mEditor.putString("userUniv", null);
-            mEditor.putString("userJob", null);
-            mEditor.commit();
-            mAuth.signOut();
-            Toast.makeText(this, "Logout successful", Toast.LENGTH_SHORT).show();
-            i = new Intent(getApplicationContext(), LoginActivity.class);
-            startActivity(i);
-            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    private void shareIt() {
-        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-        sharingIntent.setType("text/plain");
-        String shareBody = "Erhalten Sie sofortige Anwendung Sport Für alle auf google play : https://play.google.com/store/apps/details?id=app.magiscamp.sportfuralle";
-        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
-        startActivity(Intent.createChooser(sharingIntent, "Share via"));
     }
 }
