@@ -13,8 +13,9 @@
     tools:context="com.wikrama.masis.HomeActivity"
     tools:showIn="@layout/app_bar_home">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+   <ListView
+       android:layout_width="match_parent"
+       android:id="@+id/lv"
+       android:layout_height="match_parent"/>
 
 </RelativeLayout>
