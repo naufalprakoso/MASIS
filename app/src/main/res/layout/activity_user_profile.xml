@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wikrama.masis.UserProfile">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logogaje"
+        android:id="@+id/logoImg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoImg"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Nama Lu"
+        android:textSize="25dp"
+        android:id="@+id/nameTxt"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/univTxt"
+        android:layout_centerHorizontal="true"
+        android:text="Universitas Indonesia"
+        android:textSize="22.5dp"
+        android:layout_below="@+id/nameTxt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jobTxt"
+        android:layout_centerHorizontal="true"
+        android:text="Lu apa?"
+        android:textSize="22.5dp"
+        android:layout_below="@+id/univTxt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailTxt"
+        android:layout_centerHorizontal="true"
+        android:text="Contact: email"
+        android:textSize="17.5dp"
+        android:layout_below="@+id/jobTxt"/>
+
+    <LinearLayout
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@id/pembatasTengahHorizontal"
+        android:orientation="horizontal"/>
+
+    <Button
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_alignRight="@id/pembatasTengahHorizontal"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/emailTxt"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:id="@+id/editProfile"
+        android:textColor="@android:color/white"
+        android:text="Edit Profile"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignLeft="@id/pembatasTengahHorizontal"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/emailTxt"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:id="@+id/changeEmail"
+        android:textColor="@android:color/white"
+        android:text="Change Email"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
