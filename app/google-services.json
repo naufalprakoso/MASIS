@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "530498502482",
+    "firebase_url": "https://masis-f492e.firebaseio.com",
+    "project_id": "masis-f492e",
+    "storage_bucket": "masis-f492e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530498502482:android:630d1a3f847a87df",
+        "android_client_info": {
+          "package_name": "com.wikrama.masis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530498502482-h4h04oo6cs8ed6m4hulq86o8dsq3u5qf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wikrama.masis",
+            "certificate_hash": "1D9AE1F01C6E748420E69B884BC86034EE6989BA"
+          }
+        },
+        {
+          "client_id": "530498502482-nj7d4rtbu34beg20739dforjfttgu5rj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkoCXnp17XN0l6wm3LKz7uZz_TQ_bA1Y4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530498502482-nj7d4rtbu34beg20739dforjfttgu5rj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
