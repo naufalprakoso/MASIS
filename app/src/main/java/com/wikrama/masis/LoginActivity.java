@@ -116,6 +116,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(i);
                 break;
             case R.id.forgotTxt:
+                i = new Intent(getApplicationContext(), forgot_password.class);
+                startActivity(i);
                 break;
             default:
                 break;

@@ -5,7 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-
+/**
+ * Created by Naufal Prakoso on 11/5/2016.
+ */
 public class BaseActivity extends AppCompatActivity {
 
     private ProgressDialog mProgressDialog;

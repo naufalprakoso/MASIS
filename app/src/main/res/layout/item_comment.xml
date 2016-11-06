@@ -8,6 +8,7 @@
         android:id="@+id/comment_photo"
         android:layout_width="32dp"
         android:layout_height="32dp"
+        android:tint="@color/putih"
         android:layout_centerVertical="true"
         android:src="@drawable/ic_action_account_circle_40"/>
 
@@ -23,6 +24,7 @@
             android:id="@+id/comment_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/putih"
             android:textStyle="bold"
             tools:text="John Doe" />
 
@@ -30,6 +32,7 @@
             android:id="@+id/comment_body"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="wrap_content"
+            android:textColor="@color/putih"
             android:layout_height="wrap_content"
             tools:text="This is the comment text.."/>
 

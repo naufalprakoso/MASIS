@@ -18,6 +18,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/NOOOO" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/NOOOO" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".forgot_password" />
+        <activity android:name=".ChangeEmail"></activity>
+        <activity android:name=".NewPostActivity"></activity>
+        <activity android:name=".PostDetailActivity"></activity>
     </application>
 
 </manifest>

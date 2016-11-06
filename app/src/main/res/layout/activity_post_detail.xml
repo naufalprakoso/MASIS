@@ -7,7 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.google.firebase.quickstart.database.PostDetailActivity">
+    tools:context=".PostDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
 
     <include
         android:id="@+id/post_author_layout"
@@ -41,13 +47,18 @@
             android:layout_weight="0.8"
             android:layout_height="wrap_content"
             android:maxLines="1"
-            android:hint="Write a comment..."/>
+            android:textColor="@color/putih"
+            android:textColorHint="@color/putih"
+            android:hint="Berikan Komentar..."/>
 
         <Button
             android:id="@+id/button_post_comment"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="0dp"
             android:layout_weight="0.2"
+            android:background="@color/putih"
+            android:textColor="@color/colorPrimary"
+            android:elevation="5dp"
             android:layout_height="wrap_content"
             android:text="Post"/>
 
@@ -59,5 +70,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/comment_form"
         tools:listitem="@layout/item_comment" />
+
+        </RelativeLayout>
 
 </RelativeLayout>

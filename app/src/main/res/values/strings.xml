@@ -5,4 +5,9 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="heading_recent">Terhangat</string>
+    <string name="lorem">blablablablablabla</string>
+    <string name="heading_my_posts">Madingku</string>
+    <string name="heading_my_top_posts">Terpopuler</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 </resources>

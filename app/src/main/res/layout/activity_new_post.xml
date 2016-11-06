@@ -3,9 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.google.firebase.quickstart.database.NewPostActivity">
+    android:background="@color/colorPrimary"
+    tools:context=".NewPostActivity">
 
     <EditText
+        android:elevation="5dp"
         android:id="@+id/field_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,10 +15,15 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:hint="Title"
+        android:padding="16dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:background="@android:color/white"
+        android:hint="Judul mading"
         android:maxLines="1" />
 
     <EditText
+        android:elevation="5dp"
         android:id="@+id/field_body"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,9 +32,13 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="5dp"
-        android:hint="Write your post..."
+        android:hint="Deskripsi mading..."
         android:inputType="textMultiLine"
         android:maxLines="10"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:background="@android:color/white"
+        android:padding="16dp"
         android:scrollHorizontally="false" />
 
     <android.support.design.widget.FloatingActionButton
